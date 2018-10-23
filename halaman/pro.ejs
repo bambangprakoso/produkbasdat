@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Coba aja deh pasti seruuuuuuu</h1>
+
+    <h2>ini dari backend:
+        <%= iniVarDiFrontend %>
+    </h2>
+
+    <% if (perlihatkan == true) { %>
+        <p>
+            <%= cobalagi %>
+        </p>
+    <% } %>
+
+    <ul>
+        <% for (let i = 0; i < list.length; i++) { %>
+            <li>
+                <%= list[i] %>
+            </li>
+        <% } %>
+    </ul>
+</body>
+</html>
