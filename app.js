@@ -25,7 +25,7 @@ app.set('view engine', 'ejs');
 app.set("views", path.join(__dirname, "halaman"));
 
 //app.get
-app.get('/pro', (req, res) => {
+app.get('/index', (req, res) => {
 	const variabelKirim = "Prakoso 123"
 
 	console.log(variabelKirim);
@@ -50,9 +50,9 @@ app.get('/pro', (req, res) => {
 	})
 })
 
-// app.get('/', (req, res) => {
-// 	res.render('index');
-// })
+app.get('/', (req, res) => {
+	res.render('index');
+})
 
 // app.get('/Login', (req, res) => {
 // 	res.render('Login');
@@ -62,9 +62,9 @@ app.get('/pro', (req, res) => {
 // 	res.render('Register');
 // })
 
-app.get('/', (req, res) => {
-	res.render('pro')
-})
+// app.get('/', (req, res) => {
+// 	res.render('pro')
+// })
 
 app.get('*', (req, res) => {
 	res.send('page tidak ditemukan')
