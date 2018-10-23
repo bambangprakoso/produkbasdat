@@ -54,6 +54,14 @@ app.get('/', (req, res) => {
 	res.render('index');
 })
 
+app.get('/login', (req, res) => {
+	res.render('Login');
+})
+
+app.get('/register', (req, res) => {
+	res.render('Register');
+})
+
 // app.get('/Login', (req, res) => {
 // 	res.render('Login');
 // })
